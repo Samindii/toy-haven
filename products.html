@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toy Haven - Products</title>
+
+    <meta name="description" content="Browse Toy Haven products">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Toy Haven
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-header">
+            <h1>Our Products</h1>
+            <p>Explore our collection of toys and collectibles.</p>
+        </section>
+
+        <section class="products-section">
+
+            <div class="filters">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+
+                <select id="categoryFilter">
+                    <option value="All">All Categories</option>
+                    <option value="Figurines">Figurines</option>
+                    <option value="Toys">Toys</option>
+                    <option value="Board Games">Board Games</option>
+                    <option value="Diecast Cars">Diecast Cars</option>
+                </select>
+
+            </div>
+
+            <p id="productCount"></p>
+
+            <div id="productGrid" class="product-grid"></div>
+
+        </section>
+
+    </main>
+    <!-- Product Modal -->
+<div id="productModal" class="modal">
+
+    <div class="modal-content">
+
+        <button id="closeModal" class="close-modal">
+            &times;
+        </button>
+
+        <div id="modalProductImage"></div>
+
+        <h2 id="modalProductName"></h2>
+
+        <p id="modalProductCategory"></p>
+
+        <p id="modalProductPrice"></p>
+
+        <p id="modalProductDescription"></p>
+
+        <button id="modalAddToCart" class="btn">
+            Add to Cart
+        </button>
+
+    </div>
+
+</div>
+
+    <footer>
+
+        <p>&copy; 2026 Toy Haven. All rights reserved.</p>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="feedback.html">Support</a>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
